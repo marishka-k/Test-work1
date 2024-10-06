@@ -1,0 +1,65 @@
+.revenue {
+  display: grid;
+  margin: 0;
+  grid-template-columns: 40% 15% 45%;
+  padding: 0 140px 150px;
+}
+
+.slogan {
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 700;
+  margin: 0;
+  width: 100%;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 32px;
+}
+
+.text {
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+  margin: 0; 
+}
+
+@media all and (max-width: 1200px) {
+  .revenue {
+    padding: 0 100px 150px;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .slogan {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .revenue {
+    padding: 0 80px 150px;
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .slogan {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .revenue {
+    padding: 0 40px 150px;
+  }
+}

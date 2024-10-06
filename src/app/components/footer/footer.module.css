@@ -1,0 +1,103 @@
+.footer {
+  padding: 135px 140px 225px;
+}
+
+.form {
+  display: grid;
+
+  gap: 40px;
+  grid-template-areas:
+    "textinput mailinput"
+    "textinput checkbox"
+    "textinput button";
+}
+
+.text {
+  grid-area: textinput;
+  background: inherit;
+  border: 1px solid #a4adac;
+  height: 186px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 14px 18px;
+  resize: none;
+}
+
+.text::placeholder {
+  color: inherit;
+}
+
+.checkbox {
+  grid-area: checkbox;
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  gap: 8px;
+  margin-bottom: 48px;
+}
+
+.checkbox_icon {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #a4adac;
+  border-radius: 4px;
+  accent-color: #ff5900;
+}
+
+.checkbox_discription {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 50%;
+  margin: 0;
+}
+
+.mail {
+  grid-area: mailinput;
+  width: 100%;
+  background: inherit;
+  border: none;
+  border-bottom: 1px solid #a4adac;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;  
+  padding: 10px 0 16px;
+}
+
+.mail::placeholder {
+  color: inherit;
+}
+
+.mail:focus {
+  outline: none;
+  border-bottom: 1px solid #1d1d1b;
+}
+
+.mail_error {
+  border-bottom: 1px solid #ff4026;
+}
+.mail_error:focus {
+  outline: none;
+  border-bottom: 1px solid #ff4026;
+}
+
+.error {
+  color: #ff4026;
+  visibility: hidden;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0.5px;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.error_on {
+  visibility: visible;
+}
+
+.link {
+  color: inherit;
+}

@@ -1,0 +1,72 @@
+.content {
+  margin-bottom: 160px;
+  padding: 0 140px;
+}
+
+.title {
+  font-size: 80px;
+  line-height: 88px;
+  font-weight: 700;
+  letter-spacing: -4em;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.slogan {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  width: 50%;
+  margin: 0;
+  margin-bottom: 65px;
+}
+
+.button {
+  width: 190px;
+}
+
+@media all and (max-width: 1200px) {
+  .content {
+    margin-bottom: 140px;
+    padding: 0 100px;
+  }
+
+  .title {
+    font-size: 75px;
+    line-height: 82px;
+  }
+
+  .slogan {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 60px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .content {
+    margin-bottom: 120px;
+    padding: 0 80px;
+  }
+
+  .title {
+    font-size: 52px;
+    line-height: 57px;
+  }
+
+  .slogan {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 60px;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .content {
+    padding: 0 40px;
+  }
+}

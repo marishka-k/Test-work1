@@ -1,0 +1,42 @@
+.content {
+  padding: 110px 140px 135px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 95px;
+}
+
+.slogan {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  margin: 0;  
+  align-self: center;
+}
+
+.patrners {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  gap: 80px;
+  align-items: center;
+}
+.patrner {
+  width: 100%;  
+}
+
+@media all and (max-width: 1200px) {
+  .content {
+    padding: 0 100px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .content {
+    padding: 0 80px ;
+  } 
+}
+
+@media all and (max-width: 800px) {
+  .content {
+    padding: 0 40px;
+  }
+}

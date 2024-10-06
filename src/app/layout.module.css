@@ -1,0 +1,18 @@
+.link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 10px 32px;
+  }
+  
+  .link:hover {
+      color: #FF5900;
+      text-decoration: underline;
+  }
+  
+  .link_active {
+      color: #FF5900;
+  }
+  

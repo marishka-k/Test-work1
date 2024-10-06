@@ -1,0 +1,51 @@
+.content {
+  background: #FFFFFF;
+  padding: 110px 140px 135px;
+  display: grid;
+  grid-template-columns: 500px 1fr;  
+}
+
+.slogan {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  margin: 0;
+  align-self: center;
+}
+
+.thesises {
+  display: grid;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.button {
+  margin-top: 80px;
+  width: 50%;
+}
+
+.noteboock {
+  transform: translateX(170px);  
+  background-image: url('../../../images/noteboock.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media all and (max-width: 1200px) {
+  .content {
+    padding: 0 100px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .content {
+    padding: 0 80px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .content {
+    padding: 0 40px;
+  }
+}
