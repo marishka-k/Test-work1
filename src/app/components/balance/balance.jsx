@@ -1,5 +1,5 @@
 "use client";
-import ButtonBlack from "../button/button-black/button-black";
+import ButtonBlack from "../button/button-button/button-button";
 import { useMemo, useState } from "react";
 import styles from "./balance.module.css";
 import Thesis from "./thesis/thesis";

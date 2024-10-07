@@ -1,8 +1,8 @@
 "use client"
 import react from "react";
-import styles from "./button-black.module.css";
+import styles from "./button-button.module.css";
 
-export default function ButtonBlack({ onClick, title, isActive}) {
+export default function ButtonButton({ onClick, title, isActive}) {
  
   return (
       <button type="button" onClick={onClick} className={isActive ? `${styles.button} ${styles.active}` : `${styles.button}`}>

@@ -1,9 +1,7 @@
-import Link from "next/link";
-import styles from "./how-to-work.module.css";
-import Image from "next/image";
 import Thesis from "./thesis/thesis";
-import noteboock from "../../../images/noteboock.jpg"
-import ButtonBlack from "../button/button-black/button-black";
+import ButtonSubmit from "../button/button-submit/button-submit";
+
+import styles from "./how-to-work.module.css";
 
 
 export default function HowToWork() {
@@ -17,11 +15,10 @@ export default function HowToWork() {
           <Thesis text="Ежемесячные автоматические отчёты для каждого правообладателя."/>      
         </ul>
         <div className={styles.button}>
-          <ButtonBlack title="Заказать звонок" onClick={() => console.log('Заказали звонок')}  doHaveActive={false}/>
+          <ButtonSubmit title="Заказать звонок" onClick={() => console.log('Заказали звонок')} isButtonDisabled={false}/>
         </div>
       </div>      
-        <div className={styles.noteboock}></div>
-      {/*   <Image src={noteboock} alt='noteboock' className={styles.noteboock} />        */} 
+        <div className={styles.noteboock}></div>      
     </div>
   );
 }

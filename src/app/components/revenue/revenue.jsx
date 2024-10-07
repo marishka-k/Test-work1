@@ -1,7 +1,8 @@
 "use client"
-import ButtonBlack from "../button/button-black/button-black";
+
 import { useMemo, useState } from "react";
 import styles from "./revenue.module.css";
+import ButtonButton from "../button/button-button/button-button";
 
 export default function Revenue() {
   let [activeButton, setActiveButton] = useState('operator')
@@ -22,8 +23,8 @@ export default function Revenue() {
       <div></div>
       <div>
         <div className={styles.buttons}>
-          <ButtonBlack title="Оператором" onClick={() => setActiveButton('operator')} isActive={activeButton === 'operator'} />
-          <ButtonBlack title="ОТТ сервисам" onClick={() => setActiveButton('service')} isActive={activeButton === 'service'} />
+          <ButtonButton title="Оператором" onClick={() => setActiveButton('operator')} isActive={activeButton === 'operator'} />
+          <ButtonButton title="ОТТ сервисам" onClick={() => setActiveButton('service')} isActive={activeButton === 'service'} />
         </div>
         <p className={styles.text}>
           {text}
