@@ -1,12 +1,13 @@
 "use client";
 import react from "react";
-//import Form from 'next/form'
 import styles from "./footer.module.css";
-import ButtonBlack from "../button/button-black/button-black";
+import ButtonSubmit from "../button/button-submit/button-submit";
 
 export default function Footer() {
   const [text, setText] = react.useState("");
   const [email, setEmail] = react.useState("");
+  const [isChecked, setIsChecked] = react.useState(false);
+  const [isButtonDisabled, setIsButtonDisabled] = react.useState(true);
   const isEmailWalid =  react.useMemo(() => {
     let _isEmailWalid
     let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -23,7 +24,18 @@ export default function Footer() {
   const handleSubmit = (event) => {
     event.preventDefault()
     console.log(`текст ${text} отправлен с email ${email} `);
+    setText('')
+    setEmail('')
+    setIsChecked(false)
   };
+
+  react.useEffect(() => {
+    let _isButtonDisabled = true
+    text === '' || !isEmailWalid || !isChecked
+      ? _isButtonDisabled = true
+      : _isButtonDisabled = false
+      setIsButtonDisabled(_isButtonDisabled)
+  }, [text, isEmailWalid, isChecked])  
 
   return (
     <footer className={styles.footer}>
@@ -36,10 +48,10 @@ export default function Footer() {
             <p className={isEmailWalid ? `${styles.error}` : `${styles.error} ${styles.error_on}`}>Неправильно указана почта</p>
           </div>
           <div className={styles.checkbox}>
-            <input className={styles.checkbox_icon} type="checkbox" id="horns" name="horns" />
+            <input className={styles.checkbox_icon} type="checkbox" checked={isChecked} onChange={() => setIsChecked(prevState => !prevState)} name="checkbox" />
             <p className={styles.checkbox_discription}>Я ознакомлен(а) с <a className={styles.link} href="##">политикой конфиденциальности</a> и согласен(на) на обработку <a className={styles.link} href="##">персональных данных</a>.</p>
           </div>          
-          <ButtonBlack title="отправить" doHaveActive={false}/>
+          <ButtonSubmit title="отправить" isButtonDisabled={isButtonDisabled}/>
         </div>
       </form>
     </footer>

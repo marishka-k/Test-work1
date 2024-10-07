@@ -10,18 +10,33 @@
   height: 100%;
 }
 
-
 .text {
   font-size: 22px;
   line-height: 32px;
   font-weight: 400;
-  margin: 0;  
+  margin: 0;
 }
 
 @media all and (max-width: 1200px) {
-  
+  .thesis {    
+    grid-template-columns: 28px 1fr;
+    gap: 20px;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 28px;    
+  }
 }
 
 @media all and (max-width: 1000px) {
-  
+  .thesis {    
+    grid-template-columns: 24px 1fr;
+    gap: 16px;
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 20px;    
+  }
 }

@@ -2,7 +2,10 @@
   display: grid;  
   align-items: center;
   justify-items: center;
-  padding: 0 0 212px;  
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 1440px;
 }
 
 .main {
@@ -10,7 +13,6 @@
   position: relative;
   display: flex;
   flex-direction: column;  
-  height: 2000px;
   grid-row-start: 1;
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
@@ -18,13 +20,6 @@
   background-size: contain;
   background-position-y: 70px;
   padding: 170px 0 0;
-}
-
-.footer {
-  padding: 0 140px;
-  grid-row-start: 2;
-  display: flex;
-  gap: 24px;  
 }
 
 @media all and (max-width: 1200px) {

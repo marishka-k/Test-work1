@@ -16,7 +16,7 @@ export default function Header () {
             <Link className={styles.link} href="#advantages"> Преимущества </Link>
             <Link className={styles.link} href="#howToWork"> Как работаем </Link>
           </nav>
-          <Image src={burger} className={styles.burger} alt='logo' />
+          <Image src={burger} className={styles.burger} alt='burger' />
           </div>        
         </header>
       );

@@ -22,8 +22,8 @@ export default function Revenue() {
       <div></div>
       <div>
         <div className={styles.buttons}>
-          <ButtonBlack title="Оператором" onClick={() => setActiveButton('operator')} isActive={activeButton === 'operator'} doHaveActive={true}/>
-          <ButtonBlack title="ОТТ сервисам" onClick={() => setActiveButton('service')} isActive={activeButton === 'service'} doHaveActive={true}/>
+          <ButtonBlack title="Оператором" onClick={() => setActiveButton('operator')} isActive={activeButton === 'operator'} />
+          <ButtonBlack title="ОТТ сервисам" onClick={() => setActiveButton('service')} isActive={activeButton === 'service'} />
         </div>
         <p className={styles.text}>
           {text}

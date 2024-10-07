@@ -19,8 +19,9 @@ export default function HowToWork() {
         <div className={styles.button}>
           <ButtonBlack title="Заказать звонок" onClick={() => console.log('Заказали звонок')}  doHaveActive={false}/>
         </div>
-      </div>
-      <div className= {styles.noteboock}></div>      
+      </div>      
+        <div className={styles.noteboock}></div>
+      {/*   <Image src={noteboock} alt='noteboock' className={styles.noteboock} />        */} 
     </div>
   );
 }
