@@ -1,16 +1,16 @@
 .revenue {
   display: grid;
   margin: 0;
-  grid-template-columns: 40% 15% 45%;
-  padding: 0 140px 150px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 140px;
+  padding: 0 140px 100px;
 }
 
 .slogan {
   font-size: 32px;
   line-height: 38px;
   font-weight: 700;
-  margin: 0;
-  width: 100%;
+  margin: 0;  
 }
 
 .buttons {
@@ -28,7 +28,7 @@
 
 @media all and (max-width: 1200px) {
   .revenue {
-    padding: 0 100px 150px;
+    padding: 0 100px 100px;
   }
 
   .text {
@@ -44,7 +44,8 @@
 
 @media all and (max-width: 1000px) {
   .revenue {
-    padding: 0 80px 150px;
+    padding: 0 80px 40px;
+    column-gap: 80px;
   }
 
   .text {
@@ -60,6 +61,23 @@
 
 @media all and (max-width: 800px) {
   .revenue {
-    padding: 0 40px 150px;
+    padding: 0 40px 40px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .revenue {
+    padding: 0 16px 40px;
+    grid-template-columns: 1fr;
+    row-gap: 22px;
+  }
+ 
+}
+
+@media all and (max-width: 500px) {
+ 
+  .slogan {
+    font-size: 24px;
+    line-height: 30px;
   }
 }

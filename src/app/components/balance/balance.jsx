@@ -19,10 +19,7 @@ export default function Balance({targetAdvantages}) {
           slogan= "Частотность под контролем"
           text= "Чтобы не ронять NPS и не увеличивать отток пользователей"
         />
-        <div className={styles.lanse}>
-            <Image src={line} className={styles.line} alt="line"/>
-            <Image src={linecenter} className={styles.image} alt="linecenter"/>
-            <Image src={line} className={`${styles.line} ${styles.line_unwrap}`} alt="lineunwrap"/>
+        <div className={styles.lanse}>          
         </div>
         <Thesis 
           slogan= "Максимальная выручка"

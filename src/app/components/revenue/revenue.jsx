@@ -20,7 +20,7 @@ export default function Revenue() {
       <h2 className={styles.slogan}>
          Дополнительные источники выручки для разных компаний
       </h2>
-      <div></div>
+     {/*  <div></div> */}
       <div>
         <div className={styles.buttons}>
           <ButtonButton title="Операторам" onClick={() => setActiveButton('operator')} isActive={activeButton === 'operator'} />

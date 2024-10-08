@@ -34,8 +34,24 @@
 
 @media all and (max-width: 1000px) {
   .button {
+    font-size: 18px;
+    line-height: 18px;
+    padding: 6px 0;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .button {
     font-size: 16px;
     line-height: 18px;
     padding: 6px 0;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .button {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 5px 0;
   }
 }
