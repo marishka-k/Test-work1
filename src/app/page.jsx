@@ -8,19 +8,32 @@ import Balance from "./components/balance/balance";
 import Partners from "./components/partners/partners";
 import HowToWork from "./components/how-to-work/how-to-work";
 import Footer from "./components/footer/footer";
+import { useInView } from "react-intersection-observer";
 
 
 export default function Home() {
+  const [targetAdvantages, advantagesInView] = useInView({ threshold: 0 });
+  const [targetHowToWork, howToWorkInView] = useInView({ threshold: 0 });
+  const [current, setCurrent] = react.useState("");
+     
+  react.useEffect(() => {
+    if (advantagesInView) {
+      setCurrent("advantages");
+    } else if (howToWorkInView) {
+      setCurrent("howToWork");
+    } 
+  }, [advantagesInView, howToWorkInView]);
+  
   
   return (
     <div className={styles.page}>
-      <Header/>
+      <Header current={current} />
       <main className={styles.main}>        
         <MainLead/>
         <Revenue/>
-        <Balance/>
+        <Balance targetAdvantages = {targetAdvantages}/>
         <Partners/>
-        <HowToWork/>
+        <HowToWork targetHowToWork={targetHowToWork}/>
         <Footer/>
       </main>
       

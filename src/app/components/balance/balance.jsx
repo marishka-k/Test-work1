@@ -7,10 +7,10 @@ import line from "../../../images/line.svg"
 import linecenter from "../../../images/linecenter.svg"
 import Image from "next/image";
 
-export default function Balance() {
+export default function Balance({targetAdvantages}) {
   
   return (
-    <div className={styles.balance} id='advantages'>
+    <div className={styles.balance} ref={targetAdvantages} id='advantages'>
       <h2 className={styles.slogan}>
         Баланс между выручкой и удовлетворённостью пользователей
       </h2>

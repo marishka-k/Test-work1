@@ -4,9 +4,9 @@ import ButtonSubmit from "../button/button-submit/button-submit";
 import styles from "./how-to-work.module.css";
 
 
-export default function HowToWork() {
+export default function HowToWork({targetHowToWork}) {
   return (
-    <div className={styles.content} id='howToWork'>
+    <div className={styles.content} ref={targetHowToWork} id='howToWork'>
       <div>
         <h2 className={styles.slogan}> Подробные отчёты для вас и правообладателей </h2>
         <ul className={styles.thesises}>
