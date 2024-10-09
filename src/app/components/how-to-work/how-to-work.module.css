@@ -99,11 +99,20 @@
   }
 
   .noteboock {
-    background-position-x: 0;    
+    background-position-x: 16px;
+    height: 100%;
   }
 
   .button {
     width: 100%;
     margin-bottom: 50px;
   }
+}
+
+@media all and (max-width: 500px) {
+  .noteboock {
+    background-position-x: 0;
+    background-size: cover;
+  }
+
 }
