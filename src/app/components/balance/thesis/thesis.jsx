@@ -1,4 +1,3 @@
-import { useMemo, useState } from "react";
 import styles from "./thesis.module.css";
 import arrow45 from '../../../../images/arrow45.svg'
 import Image from "next/image";

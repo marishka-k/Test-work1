@@ -1,11 +1,7 @@
 "use client";
-import ButtonBlack from "../button/button-button/button-button";
-import { useMemo, useState } from "react";
 import styles from "./balance.module.css";
 import Thesis from "./thesis/thesis";
-import line from "../../../images/line.svg"
-import linecenter from "../../../images/linecenter.svg"
-import Image from "next/image";
+
 
 export default function Balance({targetAdvantages}) {
   

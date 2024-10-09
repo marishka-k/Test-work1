@@ -40,3 +40,15 @@
     line-height: 20px;    
   }
 }
+
+@media all and (max-width: 750px) {
+  .thesis {    
+    grid-template-columns: 24px 1fr;
+    gap: 12px;
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 18px;    
+  }
+}

@@ -1,8 +1,7 @@
-"use client"
-
 import { useMemo, useState } from "react";
-import styles from "./revenue.module.css";
 import ButtonButton from "../button/button-button/button-button";
+
+import styles from "./revenue.module.css";
 
 export default function Revenue() {
   let [activeButton, setActiveButton] = useState('operator')

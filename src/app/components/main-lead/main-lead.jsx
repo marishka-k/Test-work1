@@ -1,9 +1,10 @@
 import ButtonOrange from "../button/button-orange/button-orange";
+
 import styles from "./main-lead.module.css";
 
-export default function MainLead() {
+export default function MainLead({targetMain}) {
   return (
-    <div className={styles.content}>
+    <div className={styles.content} ref = {targetMain}>
       <h1 className={styles.title}>
         Монетизируйте клиентскую базу, не снижая NPS
       </h1>

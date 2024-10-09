@@ -1,5 +1,4 @@
-"use client"
-import styles from "./button-orange.module.css";
+  import styles from "./button-orange.module.css";
 
 export default function ButtonOrange({ title }) {
 

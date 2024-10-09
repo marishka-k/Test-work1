@@ -9,7 +9,7 @@
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
-  margin: 0;  
+  margin: 0;
   align-self: center;
 }
 
@@ -20,23 +20,102 @@
   align-items: center;
 }
 .patrner {
-  width: 100%;  
+  width: 100%;
 }
 
 @media all and (max-width: 1200px) {
   .content {
-    padding: 0 100px;
+    padding: 90px 100px 110px;
+    grid-template-columns: 200px 1fr;
+  }
+
+  .slogan {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .patrners {
+    gap: 70px;   
   }
 }
 
 @media all and (max-width: 1000px) {
   .content {
-    padding: 0 80px ;
-  } 
+    padding: 70px 80px 100px;
+    grid-template-columns: 160px 1fr;
+  }
+
+  .slogan {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .patrners {
+    gap: 60px;   
+  }
 }
 
 @media all and (max-width: 800px) {
   .content {
-    padding: 0 40px;
+    padding: 60px 40px 90px;
+    grid-template-columns: 140px 1fr;
+    gap: 70px;
   }
+
+  .slogan {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .patrners {
+    gap: 55px;   
+  }
+}
+
+@media all and (max-width: 750px) {
+  .content {
+    padding: 70px 16px 85px;
+    grid-template-columns: 1fr;
+    gap: 21px;
+  }
+
+  .patrners {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template: repeat(2, 1fr) /repeat(2, 1fr);
+    align-items: center;
+    gap: 11px 8px;
+    justify-items: center;
+    grid-template-areas:
+      "clickwave novasphere"
+      "zyphronix zyphronix";
+  }
+
+  .patrner {
+    width: auto;
+  }
+
+  .clickwave {
+    grid-area: clickwave;
+    width: 138px;
+  }
+  .zyphronix {
+    grid-area: zyphronix;
+    width: 85px;
+  }
+  .novasphere {
+    grid-area: novasphere;
+    width: 138px;
+  }
+
+  .slogan {
+    font-size: 20px;
+    line-height: 25px;
+    width: 90%;  
+  }
+
+  
+
+  
 }

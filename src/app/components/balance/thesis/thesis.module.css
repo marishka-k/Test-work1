@@ -64,3 +64,19 @@
     line-height: 16px;
   }
 }
+
+@media all and (max-width: 750px) {
+  .thesis {
+    padding: 24px;
+  }
+
+  .slogan {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

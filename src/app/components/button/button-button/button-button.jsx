@@ -1,5 +1,3 @@
-"use client"
-import react from "react";
 import styles from "./button-button.module.css";
 
 export default function ButtonButton({ onClick, title, isActive}) {

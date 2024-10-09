@@ -3,7 +3,6 @@ import ButtonSubmit from "../button/button-submit/button-submit";
 
 import styles from "./how-to-work.module.css";
 
-
 export default function HowToWork({targetHowToWork}) {
   return (
     <div className={styles.content} ref={targetHowToWork} id='howToWork'>

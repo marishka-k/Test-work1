@@ -1,7 +1,8 @@
 "use client";
 import react from "react";
-import styles from "./footer.module.css";
 import ButtonSubmit from "../button/button-submit/button-submit";
+
+import styles from "./footer.module.css";
 
 export default function Footer() {
   const [text, setText] = react.useState("");
@@ -43,8 +44,8 @@ export default function Footer() {
       <form className={styles.form} onSubmit={handleSubmit}>
         <textarea rows="14" className={styles.text} name="myText" value={text} onChange={(e) => setText(e.target.value)} placeholder="Напишите свой вопрос"/>
         <div>
-          <div>
-            <input className={isEmailWalid ? `${styles.mail}` : `${styles.mail} ${styles.mail_error}`} type="email" name="myEmail" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Введите e-mail" />
+          <div className={styles.mil}>
+            <input className={isEmailWalid ? `${styles.mail_input}` : `${styles.mail_input} ${styles.mail_error}`} type="email" name="myEmail" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Введите e-mail" />
             <p className={isEmailWalid ? `${styles.error}` : `${styles.error} ${styles.error_on}`}>Неправильно указана почта</p>
           </div>
           <div className={styles.checkbox}>
