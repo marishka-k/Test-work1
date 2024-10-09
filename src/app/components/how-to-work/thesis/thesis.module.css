@@ -45,6 +45,7 @@
   .thesis {    
     grid-template-columns: 24px 1fr;
     gap: 12px;
+    padding-right: 16px;
   }
 
   .text {

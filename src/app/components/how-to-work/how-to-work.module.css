@@ -104,8 +104,9 @@
   }
 
   .button {
-    width: 100%;
+    width: calc(100% - 16px);
     margin-bottom: 50px;
+    
   }
 }
 
